@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class ListaMejorado {
     AccionesLista tarea = new AccionesLista();
+    ListaTareas lista = new ListaTareas("primera lista");
     public ListaMejorado() {
         System.out.println(" Inicializando menu ");
     }
@@ -20,16 +21,22 @@ public class ListaMejorado {
             System.out.println(" Opción elegida: ");
             switch (opcion){
                 case 1:
-                    tarea.crearNuevaTarea();
+                    tarea.crearNuevaTarea(lista);
                     break;
                 case 2:
-                    tarea.mostrarLista();
+                    tarea.verListaTarea();
                     break;
                 case 3:
-                    tarea.actualizarLista();
+                    tarea.verTareasDeLista();
                     break;
                 case 4:
+                    tarea.actualizarLista();
+                    break;
+                case 5:
                     tarea.eliminarLista();
+                    break;
+                case 6:
+                    System.out.println("Guardar");
                     break;
                 default:
                     System.out.println("NO ha ingresado una opción valida");

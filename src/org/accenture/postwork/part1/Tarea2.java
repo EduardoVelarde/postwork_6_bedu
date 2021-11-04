@@ -2,7 +2,7 @@ package org.accenture.postwork.part1;
 
 import java.time.LocalDate;
 
-public class Tarea {
+public class Tarea2 {
     private String nombre;
     private final LocalDate fecha_de_creacion;
     private LocalDate fecha_de_expiracion;
@@ -45,7 +45,7 @@ public class Tarea {
         return fecha_de_creacion;
     }
 
-    public Tarea(String nombre){
+    public Tarea2(String nombre){
         this.nombre=nombre;
     }
 
